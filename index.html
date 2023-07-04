@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Groceries</title>
+    <title>FreshAll</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <section id="headerNav">
-            <a id="logo" class="linkWeb" href="">E-Groceries</a>
+            <a id="logo" class="linkWeb" href=""><img src="img/logo.jpg" alt="E-Groceries"><h3>FreshAll</h3></a>
             <nav id="navigation">
                 <a class="linkWeb" href=""><strong>Home</strong></a>
                 <a id="navOurPackage" class="linkWeb" href=""><strong>Our Package</strong></a>
@@ -26,6 +26,14 @@
             <article id="articleTop">
                 <img src="img/e-groceries-shop-indonesia.jpg" alt="E-Groceries Shop Indonesia">
                 <h5 id="articleHead">"Setiap hari beli sayur buah yang fresh disini"</h5>
+                <section id="contact">
+                    <img src="img/contact.jpg" alt="contact">
+                    <div>
+                        <h4>Florance Hughes</h4>
+                        <p>Ibu Rumah Tangga, 28</p>
+                        <p class="line"></p>
+                    </div>
+                </section>
             </article>
             <section id="contactUs" method="">
                 <h3>Contact Us</h3>
@@ -36,23 +44,35 @@
                     <strong>Email Address:</strong>
                     <input class="input" type="text" placeholder="example@email.com"><br>
                     <strong>What are you interested in?</strong>
-                    <select class="input" name="" id="">
+                    <select required class="input" name="" id="">
+                        <option id="placeholder" value="" disabled selected>Select Option</option>
                         <optgroup label="Fruit">
-                            <option value="" disabled selected>Select Option</option>
                             <option value="apple">Apple</option>
                             <option value="banana">Banana</option>
                             <option value="melon">Melon</option>
                         </optgroup>
                         <optgroup label="Vagetables">
-                            <option value="chilli">Chilli</option>
+                            <option value="chili">Chili</option>
                             <option value="tomato">Tomato</option>
+                            <option value="onion">Onion</option>
                         </optgroup>
                     </select><br>
-                    <button class="input" type="button" onclick="doSomething();">
+                    <button id="formSend" class="input" type="button" onclick="doSomething();">
                         <strong>SEND</strong>
                     </button>
                 </form>
             </section>
+        </section>
+        <section id="information">
+            <h4>FreshAll merupakan portal layanan belanja sayur dan buah-buahan online untukmu. Ucapkan selamat tinggal kepada antrian panjang, toko yang padat, dan kemacetan!</h4>
+            <ol>
+                <li>Aneka produk segar dan hemat bikin hari kamu jadi makin Extra!</li>
+                <li>Belanja Sekarang! Order hari ini sampainya juga hari ini!</li>
+                <li>Gratis Ongkir! Pengiriman Cepat, Hemat Pengeluaran!</li>
+            </ol>
+        </section>
+        <section id="ourPackage">
+            <h1>Our Package</h1>
         </section>
     </main>
 </body>
