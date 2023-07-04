@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid rgba(3, 73, 58, 0.568);
-    padding-bottom: 10px;
+    /* padding-bottom: 5px; */
 
 }
 #headerNav img {
@@ -116,7 +116,7 @@ option{
     border-radius: 3px;
     margin-top: 3px;
 }
-#formSend {
+#send {
     background-color: rgb(0, 17, 6);
     color: antiquewhite;
 }
@@ -153,7 +153,7 @@ option{
 /* Style Main Article -Information- */
 #information{
     margin-left: 80px;
-    margin-right: 40%;
+    margin-right: 45%;
 }
 #information ol{
     list-style-type: none;
@@ -166,7 +166,8 @@ option{
 li:before{
     box-sizing: border-box;
     content: counter(list);
-    bottom: .7em;
+    bottom: .9em;
+    top: 1.4em;
     left: -2.5em;
     width: 2.5em;
     height: 2.5em;
@@ -185,4 +186,99 @@ li:before{
     color: rgb(3, 73, 58);
     background-color: rgba(95, 91, 91, 0.466);
     padding: 30px;
+}
+
+#mainOurPackageTop {
+    display: flex;
+    gap: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+}
+.divMainOurPackageTop{
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+#mainOurPackageTop img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+#mainOurPackageTop h4 {
+    margin-bottom: 5px;
+    margin-top: 17px;
+}
+#mainOUrPackageTop p {
+    margin-top: 5px;
+    font-style: italic;
+    color: rgb(116, 107, 107);
+}
+
+#mainOurPackageBottom {
+    display: flex;
+    gap: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 5px;
+}
+.divMainOurPackageBottom{
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+#mainOurPackageBottom img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+#mainOurPackageBottom h4 {
+    margin-bottom: 5px;
+    margin-top: 17px;
+}
+#mainOUrPackageBottom p {
+    margin-top: 5px;
+    font-style: italic;
+    color: rgb(116, 107, 107);
+}
+
+/* Style Footer */
+#footerTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(3, 73, 58);
+    border-top: 2px solid rgba(3, 73, 58, 0.151);
+    border-bottom: 2px solid rgba(3, 73, 58, 0.151);
+    padding: 30px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+#footerSubTitle {
+    color: rgb(116, 107, 107);
+    margin-bottom: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+#footerBottom {
+    align-items: center;
+    text-align: center;
+    color: rgb(3, 73, 58);
+}
+#footerBottom {
+    display: flex;
+    flex-direction: column;
+}
+#term {
+    display: flex;
+    gap: 15px;
+}
+#years {
+    display: flex;
+    gap: 15px;
+}
+#footerBottom p {
+    margin: 2px;
 }
