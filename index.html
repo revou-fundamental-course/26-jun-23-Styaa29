@@ -9,11 +9,11 @@
 <body>
     <header>
         <section id="headerNav">
-            <a id="logo" class="linkWeb" href=""><img src="img/logo.jpg" alt="E-Groceries"><h3>FreshAll</h3></a>
+            <a id="logo" class="linkWeb" href="#headerNav"><img src="img/logo.jpg" alt="E-Groceries"><h3>FreshAll</h3></a>
             <nav id="navigation">
-                <a class="linkWeb" href=""><strong>Home</strong></a>
-                <a id="navOurPackage" class="linkWeb" href=""><strong>Our Package</strong></a>
-                <a class="linkWeb" href=""><strong>Call Us</strong></a>
+                <a class="linkWeb" href="#headerTitle"><strong>Home</strong></a>
+                <a id="navOurPackage" class="linkWeb" href="#ourPackage"><strong>Our Package</strong></a>
+                <a class="linkWeb" href="#footerTitle"><strong>Call Us</strong></a>
             </nav>
         </section>
         <section id="headerTitle">
@@ -42,7 +42,9 @@
                     <strong>Your Name:</strong>
                     <input class="input" type="text" placeholder="First and last name"><br>
                     <strong>Email Address:</strong>
-                    <input class="input" type="text" placeholder="example@email.com"><br>
+                    <input class="input" type="email" placeholder="example@email.com"><br>
+                    <strong>Phone Number:</strong>
+                    <input class="input" type="number" placeholder="08xxxxxxxxxx"><br>
                     <strong>What are you interested in?</strong>
                     <select required class="input" name="" id="">
                         <option id="placeholder" value="" disabled selected>Select Option</option>
@@ -57,6 +59,8 @@
                             <option value="onion">Onion</option>
                         </optgroup>
                     </select><br>
+                    <strong>Message:</strong>
+                    <textarea name="" id="" cols="8" rows="8" placeholder="Your Message"></textarea><br>
                     <button id="send" class="input" type="button" onclick="doSomething();">
                         <strong>SEND</strong>
                     </button>
@@ -82,14 +86,14 @@
         </section>
         <section id="mainOurPackageTop">
             <div class="divMainOurPackageTop">
-                <img src="" alt="Fresh Vegetable">
+                <img src="img/vegetable.jpg" alt="Fresh Vegetable">
                 <div>
                     <h4>Fresh Vagatable</h4>
                     <p>Sayuran Segar Langsung dari sumber pertanian terbaik</p>
                 </div>
             </div>
             <div class="divMainOurPackageTop">
-                <img src="" alt="Fresh Fruit">
+                <img src="img/fruit.jpg" alt="Fresh Fruit">
                 <div>
                     <h4>Fresh Fruit</h4>
                     <p>Buah dengan kualtas terbaik dari local atau import dan harga yang menarik</p>
@@ -97,7 +101,7 @@
                 </div>
             </div>
             <div class="divMainOurPackageTop">
-                <img src="" alt="Instan Delivery">
+                <img src="img/delivery.jpg" alt="Instan Delivery">
                 <div>
                     <h4>Instant Delivery</h4>
                     <p>Dikirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
@@ -106,23 +110,23 @@
         </section>
         <section id="mainOurPackageBottom">
             <div class="divMainOurPackageBottom">
-                <img src="" alt="Kitchen Ingredient">
+                <img src="img/ingredient.jpg" alt="Kitchen Ingredient">
                 <div>
                     <h4>Kitchen Ingredient</h4>
                     <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
                 </div>
             </div>
             <div class="divMainOurPackageBottom">
-                <img src="" alt="Kitchen Set">
+                <img src="img/set.jpg" alt="Kitchen Set">
                 <div>
                     <h4>Kitchen Set</h4>
                     <p>Segala jenis alat masak untuk membantu kamu memasak</p>
                 </div>
             </div>
             <div class="divMainOurPackageBottom">
-                <img src="" alt="Bunding Set">
+                <img src="img/bundling.jpg" alt="Bundling Set">
                 <div>
-                    <h4>IBunding Set</h4>
+                    <h4>Bundling Set</h4>
                     <p>Bingung masak apa? sudah tersedia paket untuk kamu masak di dapurmu</p>
                 </div>
             </div>
