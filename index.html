@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshAll</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylePhone.css">
 </head>
+
 <body>
     <header>
         <section id="headerNav">
             <a id="logo" class="linkWeb" href="#headerNav"><img src="img/logo.jpg" alt="E-Groceries"><h3>FreshAll</h3></a>
             <nav id="navigation">
-                <a class="linkWeb" href="#headerTitle"><strong>Home</strong></a>
-                <a id="navOurPackage" class="linkWeb" href="#ourPackage"><strong>Our Package</strong></a>
-                <a class="linkWeb" href="#footerTitle"><strong>Call Us</strong></a>
+                <a class="linkWeb" href="#headerTitle">
+                    <button id="navButton" class="input" type="button">
+                    <strong>Home</strong>
+                </button>
+            </a>
+                <a id="navOurPackage" class="linkWeb" href="#ourPackage">
+                    <button id="navButton" class="input" type="button">
+                        <strong>Our Package</strong>
+                    </button>
+                </a>
+                <a class="linkWeb" href="#footerTitle">
+                    <button id="navButton" class="input" type="button">
+                        <strong>Call Us</strong>
+                    </button>
+                </a>
             </nav>
         </section>
+
         <section id="headerTitle">
             <h1>Top Rated E-Groceries Shop in Indonesia</h1>
             <h4 id="headerSubTitle">Every Day with Best Ingredients</h4>
         </section>
     </header>
+
     <main>
         <section id="callUs">
             <article id="articleTop">
@@ -35,38 +51,47 @@
                     </div>
                 </section>
             </article>
-            <section id="contactUs" method="">
+
+            <section id="contactUs">
                 <h3>Contact Us</h3>
                 <h5>Sales akan menghubungi anda 1x24 jam setelah data kami terima</h5>
-                <form id="form" action="">
+                <form id="form" name="contact-form" onsubmit="return validateForm()">
                     <strong>Your Name:</strong>
-                    <input class="input" type="text" placeholder="First and last name"><br>
+                    <input name="full-name" class="input" type="text" placeholder="First and last name"><br>
+
                     <strong>Email Address:</strong>
-                    <input class="input" type="email" placeholder="example@email.com"><br>
+                    <input name="email" class="input" type="email" placeholder="example@email.com"><br>
+
                     <strong>Phone Number:</strong>
-                    <input class="input" type="number" placeholder="08xxxxxxxxxx"><br>
+                    <input name="phone" class="input" type="number" placeholder="08xxxxxxxxxx"><br>
+
                     <strong>What are you interested in?</strong>
-                    <select required class="input" name="" id="">
+                    <select required class="input" name="pilih" id="">
                         <option id="placeholder" value="" disabled selected>Select Option</option>
-                        <optgroup label="Fruit">
-                            <option value="apple">Apple</option>
+
+                        <optgroup name="buah" label="Fruit">
+                            <option id="apple" value="apple">Apple</option>
                             <option value="banana">Banana</option>
                             <option value="melon">Melon</option>
                         </optgroup>
+
                         <optgroup label="Vagetables">
                             <option value="chili">Chili</option>
                             <option value="tomato">Tomato</option>
                             <option value="onion">Onion</option>
                         </optgroup>
                     </select><br>
+
                     <strong>Message:</strong>
-                    <textarea name="" id="" cols="8" rows="8" placeholder="Your Message"></textarea><br>
-                    <button id="send" class="input" type="button" onclick="doSomething();">
+                    <textarea name="message" id="" cols="8" rows="8" placeholder="Your Message"></textarea><br>
+
+                    <button id="send" class="input" type="submit">
                         <strong>SEND</strong>
                     </button>
                 </form>
             </section>
         </section>
+
         <section id="information">
             <h4>FreshAll merupakan portal layanan belanja sayur dan buah-buahan online untukmu. Ucapkan selamat tinggal kepada antrian panjang, toko yang padat, dan kemacetan!</h4>
             <ol>
@@ -81,9 +106,11 @@
                 </li>
             </ol>
         </section>
+
         <section id="ourPackage">
             <h1>Our Package</h1>
         </section>
+
         <section id="mainOurPackageTop">
             <div class="divMainOurPackageTop">
                 <img src="img/vegetable.jpg" alt="Fresh Vegetable">
@@ -92,14 +119,16 @@
                     <p>Sayuran Segar Langsung dari sumber pertanian terbaik</p>
                 </div>
             </div>
+
             <div class="divMainOurPackageTop">
                 <img src="img/fruit.jpg" alt="Fresh Fruit">
                 <div>
                     <h4>Fresh Fruit</h4>
                     <p>Buah dengan kualtas terbaik dari local atau import dan harga yang menarik</p>
-                    <p class="line"></p>
+                    <p id="line" class="line"></p>
                 </div>
             </div>
+
             <div class="divMainOurPackageTop">
                 <img src="img/delivery.jpg" alt="Instan Delivery">
                 <div>
@@ -108,6 +137,7 @@
                 </div>
             </div>
         </section>
+
         <section id="mainOurPackageBottom">
             <div class="divMainOurPackageBottom">
                 <img src="img/ingredient.jpg" alt="Kitchen Ingredient">
@@ -116,6 +146,7 @@
                     <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
                 </div>
             </div>
+
             <div class="divMainOurPackageBottom">
                 <img src="img/set.jpg" alt="Kitchen Set">
                 <div>
@@ -123,6 +154,7 @@
                     <p>Segala jenis alat masak untuk membantu kamu memasak</p>
                 </div>
             </div>
+
             <div class="divMainOurPackageBottom">
                 <img src="img/bundling.jpg" alt="Bundling Set">
                 <div>
@@ -132,14 +164,16 @@
             </div>
         </section>
     </main>
+
     <footer>
         <section id="footerTitle">
             <h1>Belanja Bahan Segar Tinggal Klik!</h1>
-            <h4 id="footerSubTitle">Tambahkan sayuran segar, buah-buahan, bumbu dapur, alat masak, dan lainnya ke troli dan pesananmu bisa dikirim pada hari yang sama</h4>
-            <button id="send" class="input" type="button" onclick="doSomething();">
+            <h4 id="footerSubTitle">Tambahkan sayuran segar, buah-buahan, bumbu dapur, alat masak, dan lainnya ke troli dan pesananmu bisa dikirim pada hari yang sama. Ayo Pesan Sekarang!</h4>
+            <a href="#contactUs"><button id="navButton" class="input" type="button">
                 <strong>Call to Action</strong>
-            </button>
+            </button></a>
         </section>
+
         <section id="footerBottom">
             <h3>FreshAll</h3>
             <div id="term">
@@ -152,5 +186,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

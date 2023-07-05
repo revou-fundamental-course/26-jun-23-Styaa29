@@ -1,0 +1,104 @@
+@media only screen and (max-width: 600px){
+    #headerNav {
+        flex-direction: column;
+    }
+    #navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navButton {
+        width: 250px;
+    }
+
+    #headerTitle {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    #callUs {
+        flex-direction: column;
+    }
+
+    #articleTop {
+        margin-left: 2%;
+        margin-right: 2%;
+        align-items: center;
+        text-align: center;
+    }
+    #articleTop img{
+        width: 250px;
+    }
+    #articleHead {
+        margin-left: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contact{
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        align-items: center;
+        text-align: center;
+    }
+    #contact img {
+        width: 65px;
+        height: 65px;
+    }
+
+    #contactUs {
+        margin-left: 2%;
+        margin-right: 2%; 
+    }
+
+    #information {
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: justify;
+    }
+
+    #mainOurPackageTop {
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+    .divMainOurPackageTop {
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        align-items: center;
+        text-align: center;
+    }
+    #mainOurPackageTop h4 {
+        margin-top: 5px;
+    }
+    #line{
+        border-bottom: 0px;
+        margin-bottom: 0px;        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    #mainOurPackageBottom {
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+    .divMainOurPackageBottom {
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        align-items: center;
+        text-align: center;
+    }
+    #mainOurPackageBottom h4 {
+        margin-top: 5px;
+    }
+
+    #footerSubTitle {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
