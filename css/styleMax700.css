@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     #headerNav {
         flex-direction: column;
     }
@@ -27,6 +27,10 @@
     }
     #articleTop img{
         width: 250px;
+        display: block;
+        margin: auto auto;
+        /* align-items: center;
+        text-align: center; */
     }
     #articleHead {
         margin-left: auto;
@@ -75,7 +79,8 @@
     }
     #line{
         border-bottom: 0px;
-        margin-bottom: 0px;        margin-left: 0px;
+        margin-bottom: 0px;     
+        margin-left: 0px;
         margin-right: 0px;
         padding-bottom: 0px;
     }
